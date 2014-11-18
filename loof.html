@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+
+
+<style>li {padding:10px; list-style: none}</style>
+</head>
+<body>
+	<input type='button' value='open-world' onclick='open2();' />
+	<input type='text' onkeypress='winmessage(this.value)'/>
+	<input type='button' value='closeworld' onclick='close1();' />
+
+    
+    <script>
+    function open2(){
+    	win=window.open('ex2.html', 'ot', 'width=300, height=400');
+    }
+    //function winopen(){
+    //    win = window.open('ex2.html', 'ot', 'width=300px, //height=500px');
+    //}
+    function winmessage(msg){
+    	win.document.getElementById('message').innerText=msg;
+    }
+    //function winmessage(msg){
+    //    win.document.getElementById('message').innerText=msg;
+    //}
+    function close1(){
+    	win.close();
+    }
+    //function winclose(){
+    //    win.close();
+    //}
+
+
+
+
+	/*var a={'name':'lee'};
+	function hatch(b){
+		b={'name':'cho'}
+		//b.name='kim';
+	}
+	hatch(a);
+	console.log(a.name);
+*/
+
+
+	/*Array.prototype.random=function(){
+		var index=Math.floor(Math.random()*this.length);
+		return this[index];
+	}
+	var num=new Array(1,2,3,4,5,6,7,8,9,10,11,12);
+	document.write(num.random());
+	*/
+	/*var num=new Array(1,2,3,4,5,6,7,8,9);
+	function ran(hatch){
+		var index=Math.floor(Math.random()*hatch.length);
+		return hatch[index];
+	}
+	console.log(ran(num));
+	*/
+	/*var city=new Array('seoul','daegu','inchen','ulsan');
+	function ind(hatch){
+		var index=Math.floor(Math.random()*hatch.length);
+		return hatch[index];
+	}
+	console.log(ind(city));
+*/
+	/*var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+function getRandomValueFromArray(haystack){
+    var index = Math.floor(haystack.length*Math.random());
+    return haystack[index]; 
+}
+console.log(getRandomValueFromArray(arr));
+
+	function z(name){
+	this.name=name;
+	}
+	z.prototype.name=null;
+	z.prototype.introduce=function(){
+		return "my name is :  "+z.name;
+	}
+	function q(name){
+		this.name=name;
+	}
+	q.prototype=new z();
+	q.prototype.coding=function(){
+		return "Welcome home   "+q.name;
+	}
+	var p=new q('lee');
+
+	document.write(p.introduce()+'<br/>');
+	document.write(p.coding()+'<br/>');
+
+*/	
+
+	/*/ process = [
+    function(input){ return input + 10;},
+    function(input){ return input * input;},
+    function(input){ return input / 2;}
+	];
+	var input = 1;
+	for(var i = 0; i < process.length; i++){
+    input = process[i](input);
+	}
+	alert(input);
+	*/
+	/*
+	function team_member(){
+	return ['lee','kim','back','cho'];
+	}
+
+	member=team_member();
+
+	for(i=0; i<member.length; i++){
+	document.write("this is a memeber name :"+member[i].toUpperCase()+"<br/>")
+	}
+	*/
+
+	/*function get_members(){
+    return ['egoing', 'k8805', 'sorialgi'];
+}
+members = get_members();
+// members.length는 배열에 담긴 값의 숫자를 알려준다. 
+for(i = 0; i < members.length; i++){
+    // members[i].toUpperCase()는 members[i]에 담긴 문자를 대문자로 변환해준다.
+    document.write(members[i].toUpperCase());   
+    document.write('<br />');
+}
+	*/
+	</script>
+	
+
+
+</body>
+
+</html>
+
+
+
